@@ -16,6 +16,10 @@ jobs:
     - name: Set Up Docker
       uses: docker/setup-buildx-action@v1
 
+    - name: Remove Running Container
+      run: | 
+        sudo docker kill musing_galois    
+
     - name: Build Docker Image
       run: |
         sudo docker build -t simple-ci-cd-project .
