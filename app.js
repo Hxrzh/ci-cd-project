@@ -1,7 +1,7 @@
 const http = require('http');
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('CI/CD Pipeline Testing');
+  res.end('CI/CD Pipeline Container');
 });
 
 server.listen(3000, () => {
