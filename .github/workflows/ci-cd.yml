@@ -18,7 +18,7 @@ jobs:
 
     - name: Remove Running Container
       run: | 
-        sudo docker kill cicd_container && sudo docker container purge cicd_container
+        sudo docker kill cicd_container && sudo docker container prune --force
       continue-on-error: true
 
     - name: Build Docker Image
