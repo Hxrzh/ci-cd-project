@@ -1,1 +1,1 @@
-CI/CD Docker Pipeline Projeclt
+CI/CD Docker Pipeline Project
